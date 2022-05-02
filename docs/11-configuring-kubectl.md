@@ -12,7 +12,7 @@ Generate a kubeconfig file suitable for authenticating as the `admin` user:
 
 ```
 {
-  KUBERNETES_LB_ADDRESS=192.168.5.30
+  KUBERNETES_LB_ADDRESS=10.1.20.30
 
   kubectl config set-cluster kubernetes-the-hard-way \
     --certificate-authority=ca.crt \

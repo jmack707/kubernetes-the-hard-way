@@ -22,15 +22,15 @@ This does the below:
     > If you choose to change these settings, please also update vagrant/ubuntu/vagrant/setup-hosts.sh
     > to add the additional hosts to the /etc/hosts default before running "vagrant up".
 
-- Set's IP addresses in the range 192.168.5
+- Set's IP addresses in the range 10.1.20
 
     | VM            |  VM Name               | Purpose       | IP           | Forwarded Port   |
     | ------------  | ---------------------- |:-------------:| ------------:| ----------------:|
-    | master-1      | kubernetes-ha-master-1 | Master        | 192.168.5.11 |     2711         |
-    | master-2      | kubernetes-ha-master-2 | Master        | 192.168.5.12 |     2712         |
-    | worker-1      | kubernetes-ha-worker-1 | Worker        | 192.168.5.21 |     2721         |
-    | worker-2      | kubernetes-ha-worker-2 | Worker        | 192.168.5.22 |     2722         |
-    | loadbalancer  | kubernetes-ha-lb       | LoadBalancer  | 192.168.5.30 |     2730         |
+    | master-1      | kubernetes-ha-master-1 | Master        | 10.1.20.11 |     2711         |
+    | master-2      | kubernetes-ha-master-2 | Master        | 10.1.20.12 |     2712         |
+    | worker-1      | kubernetes-ha-worker-1 | Worker        | 10.1.20.21 |     2721         |
+    | worker-2      | kubernetes-ha-worker-2 | Worker        | 10.1.20.22 |     2722         |
+    | loadbalancer  | kubernetes-ha-lb       | LoadBalancer  | 10.1.20.30 |     2730         |
 
     > These are the default settings. These can be changed in the Vagrant file
 

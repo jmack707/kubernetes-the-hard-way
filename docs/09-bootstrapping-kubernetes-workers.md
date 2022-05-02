@@ -31,7 +31,7 @@ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 subjectAltName = @alt_names
 [alt_names]
 DNS.1 = worker-1
-IP.1 = 192.168.5.21
+IP.1 = 10.1.20.21
 EOF
 
 openssl genrsa -out worker-1.key 2048
@@ -52,7 +52,7 @@ When generating kubeconfig files for Kubelets the client certificate matching th
 
 Get the kub-api server load-balancer IP.
 ```
-LOADBALANCER_ADDRESS=192.168.5.30
+LOADBALANCER_ADDRESS=10.1.20.30
 ```
 
 Generate a kubeconfig file for the first worker node.
@@ -206,7 +206,7 @@ apiVersion: kubeproxy.config.k8s.io/v1alpha1
 clientConnection:
   kubeconfig: "/var/lib/kube-proxy/kubeconfig"
 mode: "iptables"
-clusterCIDR: "192.168.5.0/24"
+clusterCIDR: "10.1.20.0/24"
 EOF
 ```
 
